@@ -1,20 +1,19 @@
 name: My First CI Pipeline
 
-# Kyare chalvu joie?
 on:
   push:
     branches: [ "main" ]
 
 jobs:
   check-my-code:
-    runs-on: ubuntu-latest  # Linux server par chalse
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Code Download Karo
-      uses: actions/checkout@v4
+      - name: Code Download Karo
+        uses: actions/checkout@v4
 
-    - name: Ek simple message print karo
-      run: echo "Hello Kashyap! Tari CI Pipeline successfully chali rahi che!"
+      - name: Ek simple message print karo
+        run: echo "Hello Kashyap! Tari CI Pipeline successfully chali rahi che!"
 
-    - name: Date check karo
-  run: date
+      - name: Date check karo
+        run: date
