@@ -17,3 +17,8 @@ jobs:
 
       - name: Date check karo
         run: date
+      - name: Code Check Karo (Simulation)
+        run: |
+          echo "Checking if code is perfect..."
+          # Have niche ni command dhyan thi juo
+          exit 0
