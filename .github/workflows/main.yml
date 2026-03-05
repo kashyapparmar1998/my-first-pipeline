@@ -1,0 +1,24 @@
+name: My First CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  check-my-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code Download Karo
+        uses: actions/checkout@v4
+
+      - name: Ek simple message print karo
+        run: echo "Hello Kashyap! Tari CI Pipeline successfully chali rahi che!"
+
+      - name: Date check karo
+        run: date
+      - name: Code Check Karo (Simulation)
+        run: |
+          echo "Checking if code is perfect..."
+          # Have niche ni command dhyan thi juo
+          exit 1
